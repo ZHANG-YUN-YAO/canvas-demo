@@ -1,0 +1,254 @@
+
+<!-- saved from url=(0044)http://www.jq22.com/code/20200401233711.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<script id="jqbb" src="./jquery.min.js(1).下载"></script>
+<script>
+        function reload_html() {
+            $("\x62\x6f\x64\x79")["\x68\x74\x6d\x6c"]("");
+        }
+
+        function addhtml(lViZBL1) {
+            $("\x62\x6f\x64\x79")["\x68\x74\x6d\x6c"](lViZBL1);
+        }
+
+        function addcss(CDEsDFFJ2) {
+            var EZS_sF3 = window["\x64\x6f\x63\x75\x6d\x65\x6e\x74"]["\x63\x72\x65\x61\x74\x65\x45\x6c\x65\x6d\x65\x6e\x74"]("\x73\x74\x79\x6c\x65");
+            EZS_sF3["\x69\x6e\x6e\x65\x72\x48\x54\x4d\x4c"] = CDEsDFFJ2;
+            window["\x64\x6f\x63\x75\x6d\x65\x6e\x74"]["\x71\x75\x65\x72\x79\x53\x65\x6c\x65\x63\x74\x6f\x72"]("\x62\x6f\x64\x79")["\x61\x70\x70\x65\x6e\x64\x43\x68\x69\x6c\x64"](EZS_sF3);
+        }
+
+        function addjs(qGZu4) {
+            $("\x62\x6f\x64\x79")["\x61\x70\x70\x65\x6e\x64"](qGZu4);
+        }
+
+        function jqban(nJ5) {
+            $("\x23\x6a\x71\x62\x62")["\x61\x74\x74\x72"]("\x73\x72\x63", "\x68\x74\x74\x70\x3a\x2f\x2f\x6c\x69\x62\x73\x2e\x62\x61\x69\x64\x75\x2e\x63\x6f\x6d\x2f\x6a\x71\x75\x65\x72\x79\x2f" + nJ5 + "\x2f\x6a\x71\x75\x65\x72\x79\x2e\x6d\x69\x6e\x2e\x6a\x73");
+        }
+    </script>
+<style type="text/css">
+        *,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e4e4e4;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
+figure.card {
+  position: relative;
+  width: 380px;
+  height: 240px;
+  background-image: var(--image-src);
+  background-position: 50% 50%;
+  background-size: 125%;
+  transition: background 400ms ease;
+  box-shadow: 0 6.7px 5.3px rgba(0, 0, 0, 0.03), 0 22.3px 17.9px rgba(0, 0, 0, 0.05), 0 100px 80px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+}
+figure.card:hover figcaption {
+  transform: translateY(0px);
+}
+figure.card--1:hover {
+  background-position: 50% 100%;
+}
+figure.card--1 figcaption {
+  bottom: 0;
+  transform: translateY(80px);
+}
+figure.card--2 {
+  background-size: 110%;
+}
+figure.card--2:hover {
+  background-position: 50% -100%;
+}
+figure.card--2 figcaption {
+  top: 0;
+  transform: translateY(-80px);
+}
+figure.card--3 {
+  background-size: 115%;
+}
+figure.card--3:hover {
+  background-position: -100% 50%;
+}
+figure.card--3 figcaption {
+  left: 0;
+  transform: translateX(-180px);
+}
+figure.card--4:hover {
+  background-position: 100% 50%;
+}
+figure.card--4 figcaption {
+  right: 0;
+  transform: translateX(180px);
+}
+figure.card--1 figcaption, figure.card--2 figcaption {
+  width: 100%;
+  height: 80px;
+  padding: 15px 20px;
+}
+figure.card--3 figcaption, figure.card--4 figcaption {
+  flex-direction: column;
+  width: 180px;
+  height: 100%;
+  padding: 20px 15px;
+}
+figure.card figcaption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  background: #282828;
+  transition: transform 400ms ease;
+}
+figure.card figcaption .info {
+  color: #e2e2e2;
+  font-family: "Montserrat";
+}
+figure.card figcaption .info h3 {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  margin-bottom: 2px;
+}
+figure.card figcaption .info span {
+  color: #72cc60;
+  font-size: 0.85rem;
+}
+figure.card figcaption .links {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+figure.card figcaption .links a {
+  text-decoration: none;
+  position: relative;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-left: 10px;
+  font-size: 1.2rem;
+  opacity: 0.65;
+  border-radius: 50%;
+  overflow: hidden;
+}
+figure.card figcaption .links a:hover {
+  opacity: 1;
+}
+figure.card figcaption .links a:focus {
+  outline: none;
+}
+figure.card figcaption .links a:focus::after {
+  transform: scale(1);
+  opacity: 1;
+}
+figure.card figcaption .links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  opacity: 0;
+  background: rgba(255, 255, 255, 0.05);
+  transform: scale(0.5);
+  z-index: -1;
+  transition: all 150ms ease;
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    align-items: start;
+  }
+
+  .container {
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+    padding: 80px 0;
+  }
+}
+
+    </style>
+</head>
+<body>
+<div class="container">
+<figure class="card card--1" style="--image-src: url(&#39;https://source.unsplash.com/78A265wPiO4&#39;)">
+<figcaption>
+<span class="info">
+<h3>The Hills</h3>
+<span>by David Marcu</span>
+</span>
+<span class="links">
+<a href="http://www.jq22.com/code/20200401233711.html#"><i class="fas fa-heart"></i></a>
+<a href="http://www.jq22.com/code/20200401233711.html#" target="_blank"><i class="fab fa-instagram"></i></a>
+<a href="https://unsplash.com/photos/78A265wPiO4" target="_blank"><i class="fas fa-share"></i></a>
+</span>
+</figcaption>
+</figure>
+<figure class="card card--2" style="--image-src: url(&#39;https://source.unsplash.com/TFyi0QOx08c&#39;)">
+<figcaption>
+<span class="info">
+<h3>The Forest</h3>
+<span>by Jay Mantri</span>
+</span>
+<span class="links">
+<a href="http://www.jq22.com/code/20200401233711.html#"><i class="fas fa-heart"></i></a>
+<a href="http://www.jq22.com/code/20200401233711.html#" target="_blank"><i class="fab fa-instagram"></i></a>
+<a href="https://unsplash.com/photos/TFyi0QOx08c" target="_blank"><i class="fas fa-share"></i></a>
+</span>
+</figcaption>
+</figure>
+<figure class="card card--3" style="--image-src: url(&#39;https://source.unsplash.com/PP8Escz15d8&#39;)">
+<figcaption>
+<span class="info">
+<h3>The Desert</h3>
+<span>by Keith Hardy</span>
+</span>
+<span class="links">
+<a href="http://www.jq22.com/code/20200401233711.html#"><i class="fas fa-heart"></i></a>
+<a href="http://www.jq22.com/code/20200401233711.html#" target="_blank"><i class="fab fa-instagram"></i></a>
+<a href="https://unsplash.com/photos/PP8Escz15d8" target="_blank"><i class="fas fa-share"></i></a>
+</span>
+</figcaption>
+</figure>
+<figure class="card card--4" style="--image-src: url(&#39;https://source.unsplash.com/DLwUVlzrP0Q&#39;)">
+<figcaption>
+<span class="info">
+<h3>The Ocean</h3>
+<span>by Dan Stark</span>
+</span>
+<span class="links">
+<a href="http://www.jq22.com/code/20200401233711.html#"><i class="fas fa-heart"></i></a>
+<a href="http://www.jq22.com/code/20200401233711.html#" target="_blank"><i class="fab fa-instagram"></i></a>
+<a href="https://unsplash.com/photos/DLwUVlzrP0Q" target="_blank"><i class="fas fa-share"></i></a>
+</span>
+</figcaption>
+</figure>
+</div>
+
+<script>
+        
+</script>
+
+<script src="./jq22-1.js.下载"></script></body></html>
